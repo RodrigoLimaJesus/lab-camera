@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.zomato.photofilters.SampleFilters;
 import com.zomato.photofilters.imageprocessors.Filter;
@@ -84,7 +85,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Object ImagePicker;
                 ImagePicker.Companion.with(MainActivity.this)
                         .maxResultSize(1080, 1080)
                         .start();
